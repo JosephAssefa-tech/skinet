@@ -1,0 +1,11 @@
+D:\BootCampAug2\FullStack\Projects\skinet\Core\bin\Debug\net5.0\Core.deps.json
+D:\BootCampAug2\FullStack\Projects\skinet\Core\bin\Debug\net5.0\Core.dll
+D:\BootCampAug2\FullStack\Projects\skinet\Core\bin\Debug\net5.0\ref\Core.dll
+D:\BootCampAug2\FullStack\Projects\skinet\Core\bin\Debug\net5.0\Core.pdb
+D:\BootCampAug2\FullStack\Projects\skinet\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\BootCampAug2\FullStack\Projects\skinet\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+D:\BootCampAug2\FullStack\Projects\skinet\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+D:\BootCampAug2\FullStack\Projects\skinet\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+D:\BootCampAug2\FullStack\Projects\skinet\Core\obj\Debug\net5.0\Core.dll
+D:\BootCampAug2\FullStack\Projects\skinet\Core\obj\Debug\net5.0\ref\Core.dll
+D:\BootCampAug2\FullStack\Projects\skinet\Core\obj\Debug\net5.0\Core.pdb
