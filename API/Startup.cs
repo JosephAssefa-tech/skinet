@@ -30,6 +30,14 @@ namespace API
             services.AddSwaggerDocumentation();
            
             services.AddControllers();
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", policy =>
+                 {
+                     policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:44397/");
+
+                 });
+            });
         
             services.AddDbContext<StoreContext>(options =>
             {
@@ -55,6 +63,8 @@ namespace API
 
             app.UseRouting();
             app.UseStaticFiles();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
