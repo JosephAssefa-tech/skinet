@@ -15,6 +15,8 @@ namespace API.Errors
 
 
         }
+        public int StatusCode { get; set; }
+        public string Message { get; set; }
         private string GetDefaultMessageForStatusCode(int statusCode)
         {
             return statusCode switch
@@ -26,7 +28,6 @@ namespace API.Errors
                 _ => null
             };
         }
-        public int StatusCode { get; set; }
-        public string Message { get; set; }
+   
     }
 }

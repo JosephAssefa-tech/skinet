@@ -3,6 +3,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HttpParams } from '@angular/common/http';
 import { IBrand } from '../shared/models/brands';
 import { IPagination } from '../shared/models/pagination';
+import { IProduct } from '../shared/models/product';
 import { IType } from '../shared/models/productType';
 import { Injectable } from '@angular/core';
 import { ShopParams } from '../shared/models/shopParams';
@@ -54,6 +55,11 @@ if(shopParams.typeId !==0)
 
    }
 
+   getProduct(id:number)
+   {
+     return this.http.get<IProduct>(this.baseUrl + 'productsControllers/'+ id);
+   }
+
    getBrands()
    {
      return this.http.get<IBrand[]>(this.baseUrl + 'productsControllers/brands');
@@ -63,6 +69,8 @@ if(shopParams.typeId !==0)
    {
      return this.http.get<IType[]>(this.baseUrl + 'ProductsControllers/types');
    }
+
+
 
 
 }
