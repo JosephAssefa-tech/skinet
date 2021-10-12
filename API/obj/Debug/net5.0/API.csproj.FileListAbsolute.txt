@@ -65,3 +65,7 @@ D:\BootCampAug2\FullStack\Projects\skinet\API\obj\Debug\net5.0\API.dll
 D:\BootCampAug2\FullStack\Projects\skinet\API\obj\Debug\net5.0\ref\API.dll
 D:\BootCampAug2\FullStack\Projects\skinet\API\obj\Debug\net5.0\API.pdb
 D:\BootCampAug2\FullStack\Projects\skinet\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+D:\BootCampAug2\FullStack\Projects\skinet\API\bin\Debug\net5.0\Pipelines.Sockets.Unofficial.dll
+D:\BootCampAug2\FullStack\Projects\skinet\API\bin\Debug\net5.0\StackExchange.Redis.dll
+D:\BootCampAug2\FullStack\Projects\skinet\API\bin\Debug\net5.0\System.Diagnostics.PerformanceCounter.dll
+D:\BootCampAug2\FullStack\Projects\skinet\API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
