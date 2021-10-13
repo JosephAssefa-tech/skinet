@@ -1,3 +1,5 @@
+import { v4 as uuid } from 'uuid';
+
 export interface IBasket
 {
   id:string;
@@ -16,7 +18,12 @@ export interface IBasketItem
 
 
 export class Basket implements IBasket{
-  id='guid';
-  items:IBasketItem[];
+  id=uuid();
+  items:IBasketItem[]=[];
 
+}
+export interface IBasketTotals{
+  shipping:number;
+  subtotal:number;
+  total:number;
 }

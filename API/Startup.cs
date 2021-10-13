@@ -62,12 +62,18 @@ namespace API
                    
                }
 
+
             app.UseMiddleware<ExceptionMiddleware>();
             app.UseSwaggerDocumentation();
 
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
             app.UseHttpsRedirection();
+
+            app.UseCors(options =>
+           options.WithOrigins("https://localhost:4200")  // 4200 is front end rout
+         .AllowAnyHeader()
+         .AllowAnyMethod());
 
             app.UseRouting();
             app.UseStaticFiles();

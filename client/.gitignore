@@ -4,6 +4,8 @@ ssl
 /dist
 /tmp
 /out-tsc
+*.rdb
+*.db
 # Only exists if Bazel was run
 /bazel-out
 
