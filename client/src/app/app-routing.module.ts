@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { NotFoundComponent } from './core/not-found/not-found.component';
 import { ServerErrorComponent } from './core/server-error/server-error.component';
 import { TestErrorComponent } from './core/test-error/test-error.component';
+import { skip } from 'rxjs/operators';
 
 const routes: Routes = [
 
@@ -21,6 +22,9 @@ data: {breadcrumb:'Basket'}},
 
 {path:'checkout',loadChildren: () => import('./checkout/checkout.module').then(mod =>mod.CheckoutModule),
 data: {breadcrumb:'Checkout'}},
+
+{path:'account',loadChildren: () => import('./account/account.module').then(mod =>mod.AccountModule),
+data: {breadcrumb:{skip:true}}},
 
 {path:'**',redirectTo:'',pathMatch:'full'}
 
