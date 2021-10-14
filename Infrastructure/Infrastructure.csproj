@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.11" />
+	  <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.10" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10">
 		  <PrivateAssets>all</PrivateAssets>
@@ -15,8 +18,14 @@
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>
+	  <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.13.1" />
 	  <PackageReference Include="StackExchange.Redis" Version="2.2.50" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.13.1" />
     <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Identity\Migrations\" />
   </ItemGroup>
 
 </Project>
