@@ -1,5 +1,6 @@
-import { BehaviorSubject } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, ReplaySubject, of } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { IUser } from '../shared/models/user';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
@@ -11,12 +12,37 @@ import { map } from 'rxjs/operators';
 })
 export class AccountService {
   baseUrl=environment.apiUr;
-  private currentUserSource=new BehaviorSubject<IUser>(null);
+  private currentUserSource=new ReplaySubject<IUser>(1);
   currentUser$=this.currentUserSource.asObservable();
 
   constructor(private http:HttpClient,private router:Router) { }
 
+  // getCurrentUserValue()
+  // {
+  //   return this.currentUserSource.value;
+  // }
 
+loadCurrentUser(token:string)
+{
+if(token === null)
+{
+  this.currentUserSource.next(null);
+  return of(null);
+}
+
+  let headers=new HttpHeaders();
+  headers=headers.set('Authorization',`Bearer ${token}`);
+
+  return this.http.get(this.baseUrl + 'account', {headers}).pipe(
+    map((user:any)=>{
+      if(user)
+      {
+localStorage.setItem('token', user.token);
+this.currentUserSource.next(user);
+      }
+    })
+  );
+}
 login(values:any)
 {
 return this.http.post(this.baseUrl + 'account/login',values).pipe(
@@ -40,6 +66,7 @@ return this.http.post(this.baseUrl + 'account/register',values).pipe(
     if (user)
     {
       localStorage.setItem('token',user.token);
+      this.currentUserSource.next(user);
 
     }
   })
@@ -56,7 +83,7 @@ this.router.navigateByUrl('/');
 
 checkEmailExists(email:string)
 {
-  return this.http.get(this.baseUrl+'/account/emailexists?email=' +email);
+  return this.http.get(this.baseUrl+'account/emailexists?email=' +email);
 }
 
 }

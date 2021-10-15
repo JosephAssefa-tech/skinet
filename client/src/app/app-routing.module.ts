@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 
+import { AuthGuard } from './core/guards/auth.guard';
 import { BasketComponent } from './basket/basket.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
@@ -20,7 +21,9 @@ data: {breadcrumb:'Shop'}},
 {path:'basket',loadChildren: () => import('./basket/basket.module').then(mod =>mod.BasketModule),
 data: {breadcrumb:'Basket'}},
 
-{path:'checkout',loadChildren: () => import('./checkout/checkout.module').then(mod =>mod.CheckoutModule),
+{path:'checkout',
+canActivate:[AuthGuard],
+loadChildren: () => import('./checkout/checkout.module').then(mod =>mod.CheckoutModule),
 data: {breadcrumb:'Checkout'}},
 
 {path:'account',loadChildren: () => import('./account/account.module').then(mod =>mod.AccountModule),
