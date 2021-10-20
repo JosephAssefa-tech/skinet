@@ -1,4 +1,5 @@
 ﻿using Core.Entities;
+using Core.Entities.OrderAggregate;
 using Core.Specfications;
 using System;
 using System.Collections.Generic;
@@ -16,5 +17,12 @@ namespace Core.Interfaces
         Task<T> GetEntityWithSpec(ISpecification<T> spec);
         Task<IReadOnlyList<T>> ListAsunc(ISpecification<T> spec);
         Task<int> CountAsync(ISpecification<T> spec);
+
+        void Add(T entity);
+        void Update(T entity);
+        void Delete(T entity);
+
+
+
     }
 }

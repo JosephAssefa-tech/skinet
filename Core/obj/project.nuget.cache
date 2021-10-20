@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v0tTJl9yVPW53ydDiExVddqEyACbBoJYmcoH73H8G83vzcESh3nedkrf9j9gGW8VYFH33IFXNYXWlv4cbDWj+A==",
+  "dgSpecHash": "ctFCPuIwxFHRMbXfalc3CdqHC7Z1EVju+XDgkhrPPABBKoDXZGnvhdVx3keIAVYskKRuLOTN3Tr6/k93UM6ETA==",
   "success": true,
-  "projectFilePath": "D:\\BootCampAug2\\FullStack\\Projects\\skinet\\Core\\Core.csproj",
+  "projectFilePath": "D:\\BootCampAug2\\FullStack\\Ecommerce\\skinet\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",

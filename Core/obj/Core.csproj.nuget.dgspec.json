@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BootCampAug2\\FullStack\\Projects\\skinet\\Core\\Core.csproj": {}
+    "D:\\BootCampAug2\\FullStack\\Ecommerce\\skinet\\Core\\Core.csproj": {}
   },
   "projects": {
-    "D:\\BootCampAug2\\FullStack\\Projects\\skinet\\Core\\Core.csproj": {
+    "D:\\BootCampAug2\\FullStack\\Ecommerce\\skinet\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BootCampAug2\\FullStack\\Projects\\skinet\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\BootCampAug2\\FullStack\\Ecommerce\\skinet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\BootCampAug2\\FullStack\\Projects\\skinet\\Core\\Core.csproj",
+        "projectPath": "D:\\BootCampAug2\\FullStack\\Ecommerce\\skinet\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\BootCampAug2\\FullStack\\Projects\\skinet\\Core\\obj\\",
+        "outputPath": "D:\\BootCampAug2\\FullStack\\Ecommerce\\skinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
